@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<!--The program signifies the argument
+ to a function are passed as copies of values. 
+ The function argument from passes the copy of actuall from variable that is why the value modified is lo-->
+<body>
+
+    <p>Before the script...</p>
+
+    <script>
+        function convertFrom(from) {
+            from = from + '- hello'
+            console.log('inside convertFrom', from)
+        }
+
+        let from = 'deepti'
+        console.log('before function call', from)
+        convertFrom(from)
+        console.log('after function call', from)
+    </script>
+
+    <p>...After the script.</p>
+
+</body>
+
+</html>
