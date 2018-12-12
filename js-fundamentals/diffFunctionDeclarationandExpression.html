@@ -1,0 +1,18 @@
+<script>
+    //function 1 runs since the function declarations are created at the time of script execution when js engine identifies a function in script tag.
+//function 2 didn't execute and throws declaration expected error 
+//since the function 2 is an expression executed at the time when the execution reaches it
+
+
+function1("Are you deepti for function1 ?");
+
+    function function1(question) {
+        alert(function1)
+    }
+
+    function2("Are you deepti for function2 ?")
+    let function2 = function (question) {
+        alert(function1)
+    }
+
+</script>

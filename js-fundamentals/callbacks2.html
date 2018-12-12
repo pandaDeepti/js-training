@@ -1,0 +1,14 @@
+<script>
+        //the anonymous functions are passed an argument and are exceuted when the first funtion gets some value also the anonymous is available locally to ask
+        function ask(question, yes, no) {
+            if (confirm(question)) yes()
+            else no();
+          }
+          
+          
+          // usage: functions showOk, showCancel are passed as arguments to ask
+          ask("Do you agree?", function(){
+              alert('you agreed')
+          }, function(){
+              alert('you did not agree')
+          });</script>
